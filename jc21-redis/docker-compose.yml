@@ -1,0 +1,30 @@
+services:
+  app_proxy:
+    environment:
+      APP_HOST: redis_insight_1
+      APP_PORT: 5540
+
+  insight:
+    image: redis/redisinsight
+    hostname: redis_insight_1
+    container_name: redis_insight_1
+    init: true
+    restart: unless-stopped
+    environment:
+      RI_REDIS_HOST: server
+      RI_REDIS_PORT: 6379
+    volumes:
+      - "${APP_DATA_DIR}/data:/data:rw"
+    depends_on:
+      - server
+
+  server:
+    image: redis:8.4.0-alpine
+    hostname: redis_server_1
+    container_name: redis_server_1
+    init: true
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - "${APP_DATA_DIR}/data:/data:rw"

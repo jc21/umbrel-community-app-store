@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+APP_DATA_DIR="$(readlink -f $(dirname "${BASH_SOURCE[0]}")/..)/data"
+DATA_DIR="${APP_DATA_DIR}/vault-data"
+LOGS_DIR="${APP_DATA_DIR}/vault-logs"
+
+[ ! -d "${DATA_DIR}" ] && mkdir -p "${DATA_DIR}" && chown 100:100 "${DATA_DIR}"
+[ ! -d "${LOGS_DIR}" ] && mkdir -p "${LOGS_DIR}" && chown 100:100 "${LOGS_DIR}"
