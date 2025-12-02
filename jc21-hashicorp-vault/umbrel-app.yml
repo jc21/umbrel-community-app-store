@@ -1,0 +1,32 @@
+manifestVersion: 1
+id: jc21-hashicorp-vault
+name: Hashicorp Vault
+tagline: Identity based secrets management
+icon: https://raw.githubusercontent.com/docker-library/docs/90d4d43bdfccd5cb21e5fd964d32b0074af0f357/vault/logo.svg
+category: Development
+version: "1.21.1"
+port: 8200
+description: >-
+  Secure applications identities and protect sensitive data
+
+  Manage access to secrets and stop credentials from falling into the wrong hands with identity-based security.
+
+developer: Umbrel
+website: https://www.hashicorp.com/en/products/vault
+submitter: Jamie Curnow
+submission: https://github.com/jc21/umbrel-community-app-store
+repo: https://github.com/jc21/umbrel-community-app-store
+support: https://github.com/jc21/umbrel-community-app-store/issues
+# gallery:
+#   - https://i.imgur.com/yyVG0Jb.jpeg
+#   - https://i.imgur.com/yyVG0Jb.jpeg
+#   - https://i.imgur.com/yyVG0Jb.jpeg
+releaseNotes: >-
+  See all release notes here:
+
+  https://developer.hashicorp.com/vault/docs/updates/release-notes
+
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
