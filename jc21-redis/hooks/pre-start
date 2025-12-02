@@ -2,8 +2,8 @@
 set -euo pipefail
 
 APP_DATA_DIR="$(readlink -f $(dirname "${BASH_SOURCE[0]}")/..)/data"
-DATA_DIR="${APP_DATA_DIR}/vault-data"
-LOGS_DIR="${APP_DATA_DIR}/vault-logs"
+INSIGHT_DIR="${APP_DATA_DIR}/insight-data"
+REDIS_DIR="${APP_DATA_DIR}/redis-data"
 
-[ ! -d "${DATA_DIR}" ] && mkdir -p "${DATA_DIR}" && chown 100:100 "${DATA_DIR}"
-[ ! -d "${LOGS_DIR}" ] && mkdir -p "${LOGS_DIR}" && chown 100:100 "${LOGS_DIR}"
+[ ! -d "${INSIGHT_DIR}" ] && mkdir -p "${INSIGHT_DIR}" && chown 1000:1000 "${INSIGHT_DIR}"
+[ ! -d "${REDIS_DIR}" ] && mkdir -p "${REDIS_DIR}" && chown 1000:1000 "${REDIS_DIR}"

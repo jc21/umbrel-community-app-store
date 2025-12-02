@@ -9,12 +9,13 @@ services:
     hostname: redis_insight_1
     container_name: redis_insight_1
     init: true
+    user: "1000:1000"
     restart: unless-stopped
     environment:
       RI_REDIS_HOST: server
       RI_REDIS_PORT: 6379
     volumes:
-      - "${APP_DATA_DIR}/data:/data:rw"
+      - "${APP_DATA_DIR}/data/insight-data:/data:rw"
     depends_on:
       - server
 
@@ -23,8 +24,9 @@ services:
     hostname: redis_server_1
     container_name: redis_server_1
     init: true
+    user: "1000:1000"
     restart: unless-stopped
     ports:
       - "6379:6379"
     volumes:
-      - "${APP_DATA_DIR}/data:/data:rw"
+      - "${APP_DATA_DIR}/data/redis-data:/data:rw"
