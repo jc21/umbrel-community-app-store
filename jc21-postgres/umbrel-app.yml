@@ -9,11 +9,17 @@ port: 5433
 description: >-
   PostgreSQL is an open-source, object-relational database management system known for its reliability, robustness, and advanced features.
 
-  The default login details are:
+  The default UI login details are:
 
   - umbrel@localhost
 
   - umbrel
+
+  The default Postgres server login details are:
+
+  - postgres
+
+  - postgres
 
 developer: Postgres
 website: https://www.postgresql.org/
