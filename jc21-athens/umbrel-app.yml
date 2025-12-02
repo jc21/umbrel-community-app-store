@@ -1,0 +1,30 @@
+manifestVersion: 1
+id: jc21-athens
+name: Athens Goproxy
+tagline: A Go module datastore and proxy
+icon: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj_ibYht6FZNlFXSrFr5vYZu9t7xtY0VNraA&s
+category: Development
+version: "0.16.1"
+port: 3339
+description: >-
+  Athens is an open source enterprise ready Go Module proxy with extensive configuration for a variety of online
+  and offline usecases. It is in use for anti-censorship, compliance, data privacy, and data continuity usecases
+  in homes and corporations across the globe today.
+
+developer: Gomods
+website: https://docs.gomods.io/
+submitter: Jamie Curnow
+submission: https://github.com/jc21/umbrel-community-app-store
+repo: https://github.com/jc21/umbrel-community-app-store
+support: https://github.com/jc21/umbrel-community-app-store/issues
+gallery:
+  - https://github.com/jc21/umbrel-community-app-store/blob/master/jc21-athens/screenshots/athens.png?raw=true
+releaseNotes: >-
+  See release notes here:
+
+  https://github.com/gomods/athens/releases/tag/v0.16.1
+
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

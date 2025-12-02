@@ -1,0 +1,14 @@
+services:
+  server:
+    image: gomods/athens:v0.16.1
+    hostname: athens_server_1
+    container_name: athens_server_1
+    init: true
+    restart: unless-stopped
+    ports:
+      - "3339:3000"
+    environment:
+      ATHENS_DISK_STORAGE_ROOT: "/var/lib/athens"
+      ATHENS_STORAGE_TYPE: "disk"
+    volumes:
+      - "${APP_DATA_DIR}/data/athens:/var/lib/athens:rw"
