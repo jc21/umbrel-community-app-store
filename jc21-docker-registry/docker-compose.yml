@@ -1,8 +1,8 @@
 services:
   browser:
     image: klausmeyer/docker-registry-browser:latest
-    hostname: redis_insight_1
-    container_name: redis_insight_1
+    hostname: docker_registry_browser_1
+    container_name: docker_registry_browser_1
     restart: unless-stopped
     ports:
       - "8248:8080"
