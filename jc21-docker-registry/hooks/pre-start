@@ -8,4 +8,5 @@ AUTH_DIR="${APP_DATA_DIR}/auth"
 [ ! -d "${AUTH_DIR}" ] && mkdir -p "${AUTH_DIR}"
 
 # ensure there's a htpasswd file there, and create one with default creds if not
-[ ! -f "${AUTH_DIR}/htpasswd" ] && htpasswd -bc "${AUTH_DIR}/htpasswd" "admin" "admin"
+[ ! -f "${AUTH_DIR}/htpasswd" ] && \
+  /usr/bin/docker run --rm -v "${AUTH_DIR}:/auth" backplane/htpasswd -bc "${AUTH_DIR}/htpasswd" "admin" "admin"
