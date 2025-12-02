@@ -13,9 +13,12 @@ description: >-
   ⚠️  Be cautious when exposing apps to the public internet. Ensure they have proper security, such as login protection, and avoid exposing sensitive apps without adequate safeguards.
 
 
-  🔧 Nginx Proxy Manager uses port 40080 for HTTP (unsecured) traffic and port 40443 for HTTPS (secured) traffic.
+  ⚠️  This app requires that your Umbrel interface is not running on ports 80 or 443!
+
+
+  🔧 Nginx Proxy Manager uses port 80 for HTTP (unsecured) traffic and port 443 for HTTPS (secured) traffic.
   To make your apps accessible from the public internet, you will need to set up port forwarding on your router.
-  Forward external port 80 (HTTP) to internal port 40080 and external port 443 (HTTPS) to internal port 40443.
+  Forward external port 80 (HTTP) to internal port 80 and external port 443 (HTTPS) to internal port 443.
 
 
   🔍 Features:
