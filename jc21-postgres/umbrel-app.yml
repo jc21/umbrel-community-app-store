@@ -11,9 +11,9 @@ description: >-
 
   The default login details are:
 
-  - user@domain.com"
+  - umbrel@localhost
 
-  - SuperSecret
+  - umbrel
 
 developer: Postgres
 website: https://www.postgresql.org/

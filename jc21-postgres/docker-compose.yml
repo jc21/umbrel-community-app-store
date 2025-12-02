@@ -11,8 +11,8 @@ services:
     init: true
     restart: unless-stopped
     environment:
-      PGADMIN_DEFAULT_EMAIL: "user@domain.com"
-      PGADMIN_DEFAULT_PASSWORD: "SuperSecret"
+      PGADMIN_DEFAULT_EMAIL: "umbrel@localhost"
+      PGADMIN_DEFAULT_PASSWORD: "umbrel"
     volumes:
       - "${APP_DATA_DIR}/data/pgadmin-data:/var/lib/pgadmin:rw"
       - "${APP_DATA_DIR}/initial/servers.json:/pgadmin4/servers.json:ro"
