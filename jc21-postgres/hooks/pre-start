@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+APP_DATA_DIR="$(readlink -f $(dirname "${BASH_SOURCE[0]}")/..)/data"
+PGADMIN_DIR="${APP_DATA_DIR}/pgadmin-data"
+PG_DIR="${APP_DATA_DIR}/pgdata"
+
+[ ! -d "${PGADMIN_DIR}" ] && mkdir -p "${PGADMIN_DIR}" && chown 5050:5050 "${PGADMIN_DIR}"
+[ ! -d "${PG_DIR}" ] && mkdir -p "${PG_DIR}" && chown 1000:1000 "${PG_DIR}"

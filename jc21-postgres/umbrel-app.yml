@@ -1,0 +1,32 @@
+manifestVersion: 1
+id: jc21-postgres
+name: PostgreSQL Server
+tagline: The World's Most Advanced Open Source Relational Database
+icon: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/PostgreSQL/icon.png
+category: Development
+version: "17.7"
+port: 5433
+description: >-
+  PostgreSQL is an open-source, object-relational database management system known for its reliability, robustness, and advanced features.
+
+  The default login details are:
+  - user@domain.com"
+  - SuperSecret
+
+developer: Postgres
+website: https://www.postgresql.org/
+submitter: Jamie Curnow
+submission: https://github.com/jc21/umbrel-community-app-store
+repo: https://github.com/jc21/umbrel-community-app-store
+support: https://github.com/jc21/umbrel-community-app-store/issues
+gallery:
+  - https://github.com/jc21/umbrel-community-app-store/blob/master/jc21-redis/screenshots/redisinsight1.png?raw=true
+releaseNotes: >-
+  See release notes here:
+
+  https://www.postgresql.org/docs/release/17.7/
+
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
