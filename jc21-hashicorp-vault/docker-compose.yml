@@ -1,11 +1,13 @@
 services:
   app_proxy:
     environment:
-      APP_HOST: jc21-hashicorp-vault_server_1
+      APP_HOST: hashicorp-vault_server_1
       APP_PORT: 8200
 
   server:
     image: hashicorp/vault:latest
+    hostname: hashicorp-vault_server_1
+    container_name: hashicorp-vault_server_1
     init: true
     restart: unless-stopped
     environment:
