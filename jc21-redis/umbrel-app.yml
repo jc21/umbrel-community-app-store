@@ -5,7 +5,7 @@ tagline: Think fast. Build faster.
 icon: https://www.gravatar.com/avatar/d97b18081fdbcb9838acfeaa4335e3d3?s=120&r=g&d=404
 category: Development
 version: "8.4.0"
-port: 8200
+port: 5540
 description: >-
   Redis server with UI frontend, Redis Insight.
 
