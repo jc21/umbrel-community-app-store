@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: hashicorp-vault
+id: jc21-hashicorp-vault
 name: Hashicorp Vault
 tagline: Identity based secrets management
 icon: https://raw.githubusercontent.com/docker-library/docs/90d4d43bdfccd5cb21e5fd964d32b0074af0f357/vault/logo.svg
