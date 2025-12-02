@@ -1,9 +1,4 @@
 services:
-  app_proxy:
-    environment:
-      APP_HOST: redis_insight_1
-      APP_PORT: 5540
-
   insight:
     image: redis/redisinsight
     hostname: redis_insight_1
@@ -11,6 +6,8 @@ services:
     init: true
     user: "1000:1000"
     restart: unless-stopped
+    ports:
+      - "5540:5540"
     environment:
       RI_REDIS_HOST: redis_server_1
       RI_REDIS_PORT: 6379
