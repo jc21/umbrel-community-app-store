@@ -3,7 +3,7 @@ id: jc21-athens
 name: Athens Goproxy
 tagline: A Go module datastore and proxy
 icon: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj_ibYht6FZNlFXSrFr5vYZu9t7xtY0VNraA&s
-category: Development
+category: development
 version: "0.16.1"
 port: 3339
 description: >-

@@ -3,7 +3,7 @@ id: jc21-postgres
 name: PostgreSQL Server
 tagline: The World's Most Advanced Open Source Relational Database
 icon: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/PostgreSQL/icon.png
-category: Development
+category: databases
 version: "17.7"
 port: 5433
 description: >-
