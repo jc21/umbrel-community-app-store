@@ -1,15 +1,12 @@
 services:
-  app_proxy:
-    environment:
-      APP_HOST: hashicorp-vault_server_1
-      APP_PORT: 8200
-
   server:
     image: hashicorp/vault:latest
     hostname: hashicorp-vault_server_1
     container_name: hashicorp-vault_server_1
     init: true
     restart: unless-stopped
+    ports:
+      - "8200:8200"
     environment:
       VAULT_ADDR: "http://0.0.0.0:8200"
       VAULT_API_ADDR: "http://0.0.0.0:8200"
