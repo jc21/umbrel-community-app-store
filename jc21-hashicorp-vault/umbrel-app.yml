@@ -21,9 +21,7 @@ gallery:
   - https://github.com/jc21/umbrel-community-app-store/blob/master/jc21-hashicorp-vault/screenshots/vault1.png?raw=true
   - https://github.com/jc21/umbrel-community-app-store/blob/master/jc21-hashicorp-vault/screenshots/vault2.png?raw=true
 releaseNotes: >-
-  See all release notes here:
-
-  https://developer.hashicorp.com/vault/docs/updates/release-notes
+  See all [release notes here](https://developer.hashicorp.com/vault/docs/updates/release-notes).
 
 dependencies: []
 path: ""
