@@ -3,7 +3,7 @@ id: jc21-redis
 name: Redis Server
 tagline: Think fast. Build faster.
 icon: https://www.gravatar.com/avatar/d97b18081fdbcb9838acfeaa4335e3d3?s=120&r=g&d=404
-category: databases
+category: storage
 version: "8.4.0"
 port: 5540
 description: >-

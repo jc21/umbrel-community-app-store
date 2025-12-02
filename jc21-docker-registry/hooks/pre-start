@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+APP_DATA_DIR="$(readlink -f $(dirname "${BASH_SOURCE[0]}")/..)/data"
+INSIGHT_DIR="${APP_DATA_DIR}/insight-data"
+REDIS_DIR="${APP_DATA_DIR}/redis-data"
+
+[ ! -d "${INSIGHT_DIR}" ] && mkdir -p "${INSIGHT_DIR}" && chown 1000:1000 "${INSIGHT_DIR}"
+[ ! -d "${REDIS_DIR}" ] && mkdir -p "${REDIS_DIR}" && chown 1000:1000 "${REDIS_DIR}"

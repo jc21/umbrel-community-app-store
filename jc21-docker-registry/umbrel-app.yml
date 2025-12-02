@@ -1,0 +1,28 @@
+manifestVersion: 1
+id: jc21-docker-registry
+name: Docker Registry
+tagline: Local hosted docker images and mirror registry
+icon: https://i.pinimg.com/1200x/c6/ab/c6/c6abc6dc9b99aea3aaafb12d1d35c0f4.jpg
+category: storage
+version: "latest"
+port: 8248
+description: >-
+  Docker registry with UI frontend and an additional registry mirror.
+
+developer: Docker
+website: https://www.docker.com/
+submitter: Jamie Curnow
+submission: https://github.com/jc21/umbrel-community-app-store
+repo: https://github.com/jc21/umbrel-community-app-store
+support: https://github.com/jc21/umbrel-community-app-store/issues
+gallery:
+  - https://github.com/jc21/umbrel-community-app-store/blob/master/jc21-docker-registry/screenshots/1.png?raw=true
+releaseNotes: >-
+  Registry UI: https://github.com/klausmeyer/docker-registry-browser/releases
+
+  Registry: https://github.com/distribution/distribution/releases
+
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
