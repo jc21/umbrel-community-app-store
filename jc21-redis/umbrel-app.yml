@@ -16,7 +16,8 @@ submission: https://github.com/jc21/umbrel-community-app-store
 repo: https://github.com/jc21/umbrel-community-app-store
 support: https://github.com/jc21/umbrel-community-app-store/issues
 gallery:
-  - https://github.com/jc21/umbrel-community-app-store/blob/master/jc21-redis/screenshots/redisinsight.png?raw=true
+  - https://github.com/jc21/umbrel-community-app-store/blob/master/jc21-redis/screenshots/redisinsight1.png?raw=true
+  - https://github.com/jc21/umbrel-community-app-store/blob/master/jc21-redis/screenshots/redisinsight2.png?raw=true
 releaseNotes: >-
   See all release notes here:
 
