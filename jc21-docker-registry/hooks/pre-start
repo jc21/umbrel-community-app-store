@@ -2,8 +2,10 @@
 set -euo pipefail
 
 APP_DATA_DIR="$(readlink -f $(dirname "${BASH_SOURCE[0]}")/..)/data"
-INSIGHT_DIR="${APP_DATA_DIR}/insight-data"
-REDIS_DIR="${APP_DATA_DIR}/redis-data"
+AUTH_DIR="${APP_DATA_DIR}/auth"
 
-[ ! -d "${INSIGHT_DIR}" ] && mkdir -p "${INSIGHT_DIR}" && chown 1000:1000 "${INSIGHT_DIR}"
-[ ! -d "${REDIS_DIR}" ] && mkdir -p "${REDIS_DIR}" && chown 1000:1000 "${REDIS_DIR}"
+# create auth dir
+[ ! -d "${AUTH_DIR}" ] && mkdir -p "${AUTH_DIR}"
+
+# ensure there's a htpasswd file there, and create one with default creds if not
+[ ! -f "${AUTH_DIR}/htpasswd" ] && htpasswd -bc "${AUTH_DIR}/htpasswd" "admin" "admin"
