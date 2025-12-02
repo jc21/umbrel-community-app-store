@@ -5,9 +5,15 @@ services:
     container_name: nginx_proxy_manager_server_1
     init: true
     restart: unless-stopped
+    environment:
+      PUID: 1000
+      PGID: 1000
     ports:
       - "81:81"
       - "443:443"
     volumes:
       - "${APP_DATA_DIR}/data/npm-data:/data:rw"
       - "${APP_DATA_DIR}/data/letsencrypt:/etc/letsencrypt:rw"
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
