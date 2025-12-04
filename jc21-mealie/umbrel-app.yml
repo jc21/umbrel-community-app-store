@@ -2,8 +2,8 @@ manifestVersion: 1.1
 id: jc21-mealie
 name: Mealie
 tagline: A Place for All Your Recipes
-icon: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj_ibYht6FZNlFXSrFr5vYZu9t7xtY0VNraA&s
-category: development
+icon: https://getumbrel.github.io/umbrel-apps-gallery/mealie/icon.svg
+category: files
 version: "3.6.1"
 port: 9925
 description: >-
