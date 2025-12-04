@@ -1,4 +1,4 @@
-manifestVersion: 1
+manifestVersion: 1.1
 id: jc21-athens
 name: Athens Goproxy
 tagline: A Go module datastore and proxy

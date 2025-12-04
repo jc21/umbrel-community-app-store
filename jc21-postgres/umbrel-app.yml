@@ -1,4 +1,4 @@
-manifestVersion: 1
+manifestVersion: 1.1
 id: jc21-postgres
 name: PostgreSQL Server
 tagline: The World's Most Advanced Open Source Relational Database
